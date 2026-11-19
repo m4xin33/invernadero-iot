@@ -1,0 +1,7 @@
+streamlit>=1.40
+paho-mqtt>=2.0
+pandas
+numpy
+Pillow
+SpeechRecognition>=3.10
+anthropic>=0.40

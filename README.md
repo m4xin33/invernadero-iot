@@ -36,7 +36,8 @@ Ejemplos de órdenes de texto/voz: «enciende la bomba», «abre la ventana al 5
 ## Estructura
 
 ```
-app.py                      # Inicio: arquitectura y guía de prueba
+app.py                      # Punto de entrada: define el menú lateral
+inicio.py                   # Página de inicio con los medidores en vivo
 pages/                      # Las dos páginas (ambientes)
 core/
   mqtt_client.py            # Puente MQTT (hilo propio + estado con lock)
@@ -44,6 +45,7 @@ core/
   diagnostico.py            # Reglas del semáforo (función pura)
   vision.py                 # Índice de salud por color + Claude opcional
   voz.py                    # Transcripción de voz
+  estilos.py                # Identidad visual: CSS y medidores circulares
   ui.py / config.py         # Barra lateral y configuración
 wokwi/                      # sketch.ino, diagram.json, libraries.txt
 tools/simulador_esp32.py    # ESP32 simulado en Python (plan B / desarrollo)
